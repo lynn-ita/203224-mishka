@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Лина Мацкевич](https://up.htmlacademy.ru/adaptive/8/user/203224).
-* Наставник: `Неизвестно`.
+* Наставник: `Евгений Старшинов (ссылка: https://htmlacademy.ru/profile/id100874)`.
 
 ---
 
