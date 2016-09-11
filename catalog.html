@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body class="catalog-page">
+    <header class="page-header">
+      <h1 class="visually-hidden">Мишка</h1>
+      <div class="page-header__logo">
+        <a>
+          <img src="img/logo.svg" width="100" height="100" alt="Mishka">
+        </a>
+      </div>
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__items">
+              <li class="main-nav__item">
+                <a href="">Каталог товаров</a>              	
+              </li>
+              <li class="main-nav__item">
+                <a href="">Вязание на заказ</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="">Поиск по сайту</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="">Корзина: пока пуста</a>
+              </li>            	
+            </ul>
+          </div>
+      </nav>
+    </header>
+    <main>
+      <header class="catalog__header">
+          <h2 class="catalog-title">Каталог товаров</h2>
+      </header>
+      <section class="item-blocks">
+        <article class="item-block item-block--1">
+          <div class="item-block__photo">
+            <a href="">
+              <img src="img/item1.jpg" width="100" height="100" alt="Зайчик-попрыгайчик">
+            </a>
+          </div>
+          <div class="item-block__info">
+            <a href=""> 
+              <h3 class="item-block-title">Зайчик-попрыгайчик</h3>
+            </a>
+            <p class="item-description">Рост 30см, вес 200г </p>
+            <a href="" class="item-price">1200 руб.</a>
+          </div>
+        </article>
+        <article class="item-block item-block--2">
+          <div class="item-block__photo">
+            <a href="">
+              <img src="img/item2.jpg" width="100" height="100" alt="Корзинка для белья">
+            </a>
+          </div>
+          <div class="item-block__info">
+            <a href=""> 
+              <h3 class="item-block-title">Корзинка для белья</h3>
+            </a>
+            <p class="item-description">Диаметр 15см, высота 10см</p>
+            <a href="" class="item-price">690 руб.</a>
+          </div>
+        </article>
+        <article class="item-block item-block--3">
+          <div class="item-block__photo">
+            <a href="">
+              <img src="img/item3.jpg" width="100" height="100" alt="Большая корзинка для игрушек">
+            </a>
+          </div>
+          <div class="item-block__info">
+            <a href=""> 
+              <h3 class="item-block-title">Большая корзинка для игрушек</h3>
+            </a>
+            <p class="item-description">Диаметр 30см, высота 30см</p>
+            <a href="" class="item-price">1500 руб.</a>
+          </div>
+        </article>
+      </section>
+      <section class="content">
+        <a href=""> 
+          <h3 class="video-title">Процесс производства</h3>
+        </a>          
+        <article class="content__wrapper">
+          <video width="400" height="300" controls="controls" preload="metadata" poster="video/production.jpg">
+            <source src="video/production.ogv" type="video/ogg">
+            <source src="video/production.mp4" type="video/mp4">
+            <source src="video/production.webm" type="video/webm"> 
+          </video>
+          <p >По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как пояляются наши товары.</p>
+          <a href="" class="order btn">Сделать заказ</a>
+        </article>
+      </section>
+      <section class="modal-block modal-block--opened  modal-block--nojs">
+        <div class="modal-block__wrapper">
+          <h1 class="modal-block__title"></h1>
+          <p>Выберите размер</p>
+        <div class="modal-block__buttons">
+          <button class="modal-block__button" type="button">S</button>
+          <button class="modal-block__button" type="button">M</button>
+          <button class="modal-block__button" type="button">L</button>
+        </div>
+          <a class="modal-block__basket btn" href="">Добавить</a>
+        </div>
+      </section>
+    </main>
+      <footer class="page-footer">
+        <div class="page-footer__wrapper">
+          <section class="page-footer__social">
+            <span class="social-links">
+              <a class="social-link  social-link--in" href="https://www.instagram.com/htmlacademy">Вконтакте</a>
+              <a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+              <a class="social-link  social-link--tw" href="https://www.twitter.com/htmlacademy">Твиттер</a>
+            </span>
+          </section>
+          <section class="page-footer__copyright"> Разработано:
+            <a class="btn  page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </section>
+        </div>
+      </footer>
+    </body>
+  </html>
