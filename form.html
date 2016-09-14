@@ -1,124 +1,129 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body class="catalog-page">
-    <header class="page-header">
-      <h1 class="visually-hidden">Мишка</h1>
-      <div class="page-header__logo">
-        <a>
-          <img src="img/logo.svg" width="100" height="100" alt="Mishka">
-        </a>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+<body class="catalog-page">
+  <header class="page-header">
+    <h1 class="visually-hidden">Мишка</h1>
+    <div class="page-header__logo">
+      <a href="">
+        <img src="img/logo.svg" width="100" height="100" alt="Mishka">
+      </a>
+    </div>
+    <nav class="main-nav  main-nav--closed  main-nav--nojs">
+      <a href="" class="main-nav__toggle">Открыть меню</a>  
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a href="">Каталог товаров</a>                
+          </li>
+          <li class="main-nav__item">
+            <a href="">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">Корзина: пока пуста</a>
+          </li>             
+        </ul>
       </div>
-      <nav class="main-nav  main-nav--closed  main-nav--nojs">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__items">
-              <li class="main-nav__item">
-                <a href="">Каталог товаров</a>                
-              </li>
-              <li class="main-nav__item">
-                <a href="">Вязание на заказ</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="">Поиск по сайту</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="">Корзина: пока пуста</a>
-              </li>             
-            </ul>
-          </div>
-      </nav>
-    </header>
-    <main>
-      <section class="contactform">
-        <header class="contactform__header">
-          <h2 class="contactform__title">Вязание на заказ</h2>
-          <p>Мы будем рады воплотить  жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, 
-          чтобы уточнить детали</p>
-        </header>
-      </section>
-      <form class="filter" action="#" method="post">
-       	<fieldset class="filter__wrapper  filter__wrapper--type">
-       	  <legend class="filter__title">Тип</legend>
-         		<div class="filter__field">
-         		  <input class="filter__radio  filter__radio--cheked" type="radio" name="type" id="type-home" checked>
-         		  <label for="type-home"> Аксессуар для интерьера</label>
-         		</div>
-         		<div class="filter__field">
-         		  <input class="filter__radio" type="radio" name="type" id="type-toy">
-         		  <label for="type-toy"> Детская Игрушка</label>
-          	</div>
-        </fieldset>
-        <fieldset class="filter__wrapper  filter__wrapper--color">
-          <legend class="filter__title">Цвет</legend>
+    </nav>
+  </header>
+  <main>
+    <section class="contactform">
+      <div class="contactform__header">
+        <h2 class="contactform__title">Вязание на заказ</h2>
+        <p>Мы будем рады воплотить  жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали</p>
+      </div>
+    </section>
+    <section class="filter">
+      <div class="filter__wrapper"> 
+        <form class="filter" action="#" method="post">
+          <fieldset class="filter__wrapper  filter__wrapper--type">
+            <legend class="filter__title">Тип</legend>
+            <div class="filter__field">
+              <input class="filter__radio  filter__radio--cheked" type="radio" name="type" id="type-home" checked>
+              <label for="type-home"> Аксессуар для интерьера</label>
+            </div>
+            <div class="filter__field">
+              <input class="filter__radio" type="radio" name="type" id="type-toy">
+              <label for="type-toy"> Детская Игрушка</label>
+            </div>
+          </fieldset>
+          <fieldset class="filter__wrapper  filter__wrapper--color">
+            <legend class="filter__title">Цвет</legend>
             <div class="filter__field">
               <input class="filter__input filter__input--checked" type="checkbox" name="color" id="color-1" checked>
-         		  <label for="color-1">Белый</label>
-        		</div>
-         		<div class="filter__field">
-         		  <input class="filter__input filter__input--checked" type="checkbox" name="color-2" id="color-2" checked>
-         		  <label for="color-2">Серый</label>
-         		</div>
-         		<div class="filter__field">         		
-         		  <input class="filter__input" type="checkbox" name="color-3" id="color-3">
-         		  <label for="color-3">"Тиффани"</label>
-         		</div>
-         		<div class="filter__field">
-         		  <input class="filter__input" type="checkbox" name="color-4" id="color-4">
-         		  <label for="color-4">Черный</label>
-         		</div>
-         		<div class="filter__field">
-       	      <input class="filter__input" type="checkbox" name="color-5" id="color-5">
-         		  <label for="color-5">Розовый</label>
-         		</div>
-         		<div class="filter__field">
-       	      <input class="filter__input" type="checkbox" name="color-6" id="color-6">
-         		  <label for="color-6">Оранжевый</label>
-         	  </div>
-       	</fieldset>
-       	<fieldset class="contactform__wrapper">
-       	  <legend class="contactform__title">ФИО</legend>
-       	    <div class="contactform__field">
-       	  	  <label for="firstname">Имя:</label>
-       	  	  <input type="text" name="username" id="firstname" placeholder="Введите ваше имя" required>
-       	  	</div>
-       	  	<div class="contactform__field">
-       	  	  <label for="lastname">Фамилия:</label>
-       	  	  <input type="text" name="lastname" id="lastname" placeholder="Укажите фамилию" required>
-       	  	</div>
-       	  	<div class="contactform__field">
-       	  	  <label for="middlename">Отчество:</label>
-       	  	  <input type="text" name="middlename" id="middlename" placeholder="Отчество, если желаете">
-        	  </div>
-        </fieldset>
-        <section class="contactform__wrapper">
+              <label for="color-1">Белый</label>
+            </div>
+            <div class="filter__field">
+              <input class="filter__input filter__input--checked" type="checkbox" name="color-2" id="color-2" checked>
+              <label for="color-2">Серый</label>
+            </div>
+            <div class="filter__field">         		
+              <input class="filter__input" type="checkbox" name="color-3" id="color-3">
+              <label for="color-3">"Тиффани"</label>
+            </div>
+            <div class="filter__field">
+              <input class="filter__input" type="checkbox" name="color-4" id="color-4">
+              <label for="color-4">Черный</label>
+            </div>
+            <div class="filter__field">
+              <input class="filter__input" type="checkbox" name="color-5" id="color-5">
+              <label for="color-5">Розовый</label>
+            </div>
+            <div class="filter__field">
+              <input class="filter__input" type="checkbox" name="color-6" id="color-6">
+              <label for="color-6">Оранжевый</label>
+            </div>
+          </fieldset>
+          <fieldset class="contactform__wrapper">
+            <legend class="contactform__title">ФИО</legend>
+            <div class="contactform__field">
+              <label for="firstname">Имя:</label>
+              <input type="text" name="username" id="firstname" placeholder="Введите ваше имя" required>
+            </div>
+            <div class="contactform__field">
+              <label for="lastname">Фамилия:</label>
+              <input type="text" name="lastname" id="lastname" placeholder="Укажите фамилию" required>
+            </div>
+            <div class="contactform__field">
+              <label for="middlename">Отчество:</label>
+              <input type="text" name="middlename" id="middlename" placeholder="Отчество, если желаете">
+            </div>
+          </fieldset>
+          <section class="contactform__wrapper">
             <label class="contactform__title" for="tel">Тел</label>
             <input type="tel" name="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 ХХХ ХХ ХХ" required>
             <label class="contactform__title" for="email">E-mail</label>
             <input type="email" name="email" id="email" placeholder="Ваш Email" required>
             <label class="contactform__title" for="message">Доп</label>
             <textarea name="message" id="message" placeholder="Опишите все ваши пожелания к заказу" required></textarea>
-        </section>
-          <span>Все поля обязательны для заполнения</span>
+          </section>
+          <div class="note">
+            <span>Все поля обязательны для заполнения</span>
+          </div>
           <input type="submit" id="submitbtn" name="submitbtn" value="Отправить заказ">
-      </form>
-    </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <section class="page-footer__social">
-          <span class="social-links">
-            <a class="social-link  social-link--in" href="https://www.instagram.com/htmlacademy">Вконтакте</a>
-            <a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
-            <a class="social-link  social-link--tw" href="https://www.twitter.com/htmlacademy">Твиттер</a>
-          </span>
-        </section>
-        <section class="page-footer__copyright"> Разработано:
-          <a class="btn  page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </section>
+        </form>
       </div>
-    </footer>
-  </body>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper"> 
+      <div class="page-footer__social">
+        <span class="social-links">
+          <a class="social-link  social-link--in" href="https://www.instagram.com/htmlacademy">Вконтакте</a>
+          <a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+          <a class="social-link  social-link--tw" href="https://www.twitter.com/htmlacademy">Твиттер</a>
+       </span>
+      </div>
+      <div class="page-footer__copyright"> Разработано:
+        <a class="btn  page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
