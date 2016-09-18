@@ -1,0 +1,60 @@
+/* Файл blocks/headline-item.less */
+.container {
+  padding: 0 30px;
+}
+
+.headline-item {
+  &__label {
+    color: @color-lightgreen;
+
+    text-transform: uppercase;
+
+    .font-normal (17px; 16px);
+    }
+
+  &__info {
+    font-size: 15px;
+    line-height:24px;}
+}
+
+.item-description {
+  border-bottom: 1px solid @color-lightgrey;
+}
+
+
+.item-spec {
+  color: @color-darkgrey;
+  text-align: center;
+  font-weight: bold;
+}
+ .item-spec__photo {
+    background: @color-lightgrey url(../img/triple-set-mobile@1x.jpg) no-repeat 50% 0;
+    width: 260px;
+    height: 315px;
+    }
+
+  .item-spec__price {
+    display: block;
+
+   .font-normal (17px; 24px);
+
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+ .item-spec__button {
+    display: block;
+
+    color: @color-darkgrey;
+    border: 1px solid @color-darkgrey;
+
+    .font-normal (17px; 16px);
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
