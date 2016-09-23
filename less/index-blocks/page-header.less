@@ -1,0 +1,47 @@
+/* Файл index-blocks/page-header.less */
+
+.visually-hidden {
+  display: none;
+}
+
+/* Файл blocks/page-header.less */
+
+.page-header__logo {
+  height: 79px;
+  border-bottom: 1px solid @color-lightgrey;
+  background:  url(../img/logo-mobile.svg) no-repeat;
+  text-align: center;
+}
+
+@media @tablet-widths {
+
+  .page-header {
+     position: relative;
+     min-height: 89px; /* минимальная высота содержания */
+  }
+
+  .page-header__logo {
+    border-bottom: 1px solid @color-lightgrey;
+  }
+
+  .page-header__logo a {
+    position: absolute;
+    margin-left: -320px;
+    padding: 22px 0;
+  }
+}
+
+@media @desktop-widths {
+  .page-header__logo {
+    border-right:none;
+    border-bottom: 1px solid @color-lightgrey;
+  }
+
+  .page-header__logo a {
+    width: 175px;
+    height: 55px;
+    position: absolute;
+    margin-left: -90px;
+    padding: 22px 0;
+  }
+}

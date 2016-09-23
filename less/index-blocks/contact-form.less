@@ -1,0 +1,75 @@
+/* Файл index-blocks/contact-form.less */
+
+.contact-form {
+  font-size: 15px;
+  line-height: 30px;
+  font-style: normal;
+  margin: 30px 30px;
+}
+
+.contact-form__title {
+  font-size: 18px;
+  line-height:30px;
+  font-weight: 700;
+}
+.contact-form__email {
+
+
+}
+.contact-form__email p {
+  padding-right: 20px;
+
+}
+.contact-form__email a {
+  text-decoration:none ;
+  color:@color-darkgrey;
+  border-bottom: 1px solid @color-lightgreen;
+
+  &:hover {
+   color:@color-lightgreen;
+
+  border-bottom: 1px solid @color-darkgreen
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+.contact-form__adress {
+
+}
+
+
+/*Кнопка Напишите нам*/
+.contact__button {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  margin: 35px 0;
+}
+
+.contact__button input[type=submit] {
+  background-color: @bg-white;
+  border: 2px solid @color-darkgrey;
+  color: #333333;
+  width: 100%;
+  height: 52px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+/*Map*/
+.map {
+  background: url(../img/map-mobile@1x.jpg) no-repeat;
+  min-width: 100%;
+  min-height: 458px;
+}
+
+iframe {
+  width: 100%;
+  height: 458px;
+}
