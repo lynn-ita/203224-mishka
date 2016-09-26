@@ -1,0 +1,94 @@
+.contactform__wrapper {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 260px;
+}
+.contactform__title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: @color-lightgreen;
+  text-transform: uppercase;
+  &--name {
+    padding: 20px 0;
+  }
+  &--tel {
+    display:block;
+    padding: 20px 0 15px 0;
+  }
+  &--email {
+    display:block;
+    padding-top: 28px;
+  }
+  &--extra {
+    display:block;
+    padding: 28px 0;
+  }
+}
+.contactform__field{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+input[type=text],
+input[type=tel],
+input[type=email]{
+  width: 258px;
+  padding: 10px 0;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid @color-darkgrey;
+  outline: none;
+}
+
+input[placeholder] {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+textarea {
+  width: 236px;
+  height: 115px;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 10px;
+  border: 2px solid @color-darkgrey;
+  outline: none;
+}
+
+.note {
+  display:flex;
+  justify-content: space-around;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+  color: @color-darkgrey;
+}
+
+
+input[type=submit] {
+  display: flex;
+  justify-content: center;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: @color-darkgrey;
+  border: 2px solid @color-darkgrey;
+  background-color: @bg-white;
+
+  width: 258px;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  margin-bottom: 50px;
+}

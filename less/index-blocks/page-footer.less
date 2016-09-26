@@ -1,17 +1,22 @@
 /* Файл index-blocks/page-footer.less */
 .page-footer {
-  min-height: 160px; /* Временно для сетки */
-  background-color: @color-lightgrey;
-}
-.page-footer__wrapper {
-  .container();
+  min-height: 160px;
+  background-color: #f1f1f1;
 }
 
-.social-links {
-  display: block;
-  text-align: center;
+.social-links,
+.page-footer__copyright{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   height: 80px;
+  margin:0 58px;
 }
+
+.logo-in-footer{
+  display: none;
+}
+
 .social-link {
   &--in {
     background:  url(../img/icon-insta.svg) no-repeat;
@@ -23,28 +28,21 @@
     background: url(../img/icon-twitter.svg) no-repeat;
   }
 }
-.page-footer__copyright {
-  display: block;
-  text-align: center;
-  height: 80px;
-  border-top: 1px solid @color-darkgrey;
-}
+
 .page-footer__copyright {
   font-size: 19px;
   line-height:18px;
-}
-
-.page-footer__copyright-link{
-  height:50px;
-
+  font-weight: 700;
   background: url(../img/logo-htmlacademy.svg) no-repeat;
+  border-top: 1px solid #ededed;
 }
+
 
 
 @media @tablet-widths {
 
   .page-footer__wrapper {
-    min-height: 143px; /* Временно для сетки */
+    min-height: 143px;
     margin-top: 0;
     padding-top: 57px;
     padding-bottom: 59px;

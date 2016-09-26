@@ -1,10 +1,12 @@
 /* Файл index-blocks/contact-form.less */
-
+.contact-form__wrapper {
+  .container();
+  margin: 0 30px;
+}
 .contact-form {
   font-size: 15px;
   line-height: 30px;
   font-style: normal;
-  margin: 30px 30px;
 }
 
 .contact-form__title {
@@ -12,10 +14,8 @@
   line-height:30px;
   font-weight: 700;
 }
-.contact-form__email {
 
 
-}
 .contact-form__email p {
   padding-right: 20px;
 
@@ -34,32 +34,30 @@
     opacity: 0.3;
   }
 }
+.contact-form__email{
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+}
+
+
 .contact-form__adress {
+  display: flex;
+  justify-content: space-around;
 
 }
 
 
 /*Кнопка Напишите нам*/
 .contact__button {
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-
   margin: 35px 0;
 }
 
 .contact__button input[type=submit] {
-  background-color: @bg-white;
-  border: 2px solid @color-darkgrey;
-  color: #333333;
-  width: 100%;
-  height: 52px;
-
   font-size: 18px;
-  line-height: 30px;
+  line-height: 16px;
   font-weight: 700;
-
-  text-transform: uppercase;
+  margin: 0 30px;
 }
 
 /*Map*/

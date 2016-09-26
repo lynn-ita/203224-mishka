@@ -1,6 +1,14 @@
 /* Файл index-blocks/headline-item.less */
-.container {
-  padding: 0 30px;
+.headline-item__wrapper {
+  margin: 0 30px;
+}
+
+
+.headline-item__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+  font-style: normal;
 }
 
 .headline-item__label {
@@ -16,60 +24,124 @@
 
 .headline-item__info {
   font-size: 15px;
-  line-height: 24px;}
-
-
-  .headline-item__table {
-    border-collapse: collapse;
-    border: none;
-    font-size: 15px;
-    line-height: 20px;
-  }
-
-  .headline-item__column  {
-    border-bottom: 1px solid @color-lightgrey;
-    padding: 10px;
-    padding-right: 30px;
-  }
-
-  .headline-item__spec {
-    color: @color-darkgrey;
-    text-align: center;
-    font-size: 17px;
-    line-height: 24px;
-    font-weight: bold;
-    font-style: normal;
-  }
-  .headline-item__photo {
-    background: @color-lightgrey url(../img/triple-set-mobile@1x.jpg) no-repeat 50% 0;
-    min-width: 260px;
-    min-height: 315px;
-  }
-
-  .headline-item__price {
-    display: block;
-    font-size: 17px;
-    line-height:24px;
-    font-weight: bold;
-    font-style: normal;
-
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .headline-item__button {
-    display: block;
-
-    font-size: 17px;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: @color-darkgrey;
-    border: 2px solid @color-darkgrey;
-    font-weight: 700;
-    text-decoration: none;
-    padding-top: 16px;
-
-    padding-bottom: 16px;
+  line-height: 24px;
 }
 
 
+.headline-item__table {
+  border-collapse: collapse;
+  border: none;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.headline-item__column  {
+  border-bottom: 1px solid @color-lightgrey;
+  padding: 5px;
+  padding-right: 15px;
+}
+
+.headline-item__footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+
+  color: @color-darkgrey;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  font-style: normal;
+}
+.headline-item__photo {
+  background: @color-lightgrey url(../img/triple-set-mobile@1x.jpg) no-repeat 50% 0;
+  width: 260px;
+  height: 315px;
+  background-size: contain;
+}
+
+.headline-item__price {
+  display: flex;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.headline-item__button {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 16px;
+
+  padding-bottom: 16px;
+
+  margin: auto;
+  width: 258px;
+}
+
+
+
+/* Планшетная версия */
+@media @tablet-widths {
+
+  .headline-item__wrapper{
+    margin: 0 50px;
+  }
+  .headline-item__header {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 25px;
+
+  }
+  .headline-item__title{
+   font-size: 43px;
+   line-height:50px;
+   flex-grow:1;
+   margin-bottoom: 50px;
+ }
+ .headline-item__label{
+  display: flex;
+  align-items: center;
+  width: 100px;
+}
+.headline-item__blok {
+  display:flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.headline-options{
+  width: 285px;
+  padding-right: 45px;
+}
+.headline-item__info {
+  padding-bottom: 40px;
+}
+
+.headline-item__info,
+.headline-item__table{
+  font-size: 17px;
+  line-height: 30px;
+  margin: 0;
+}
+.headline-item__foto {
+  display:flex;
+  background: #f1f1f1 url(../img/triple-set-mobile@1x.jpg) no-repeat 50% 50%;
+
+  width: 334px;
+  height: 405px;
+  background-size: contain;
+}
+.headline-item__footer{
+ display: flex;
+ flex-direction: column;
+ margin-top: -40px;
+ width: 290px;
+}
+
+.headline-item__price {
+  margin: auto;
+  padding-bottom: 15px;
+}
+
+}

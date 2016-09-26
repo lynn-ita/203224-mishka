@@ -4,9 +4,28 @@
 body {
   background-color: @bg-white;
   font-family: 'Open Sans', sans-serif;
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
 }
+
+.visually-hidden {
+  display: none;
+}
+
+/*Общие стили кнопок*/
+.button {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: @color-darkgrey;
+  border: 2px solid @color-darkgrey;
+}
+
+
 
 @font-face {
   font-weight: normal;

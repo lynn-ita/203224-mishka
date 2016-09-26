@@ -1,15 +1,20 @@
 /* Файл index-blocks/advantages.less */
+.advantages{
+   margin: 0 30px;
+}
 
-.advantages__items {
+.advantages__column {
   margin: 0;
   padding: 0;
 
   font-size: 17px;
-  font-style: normal;    list-style-type: none;
+  font-style: normal;
+  list-style-type: none;
 }
 
 .advantages__item {
   padding: 50px 0 20px 0;
+
   &--1 {
     background: url(../img/icon-feature-1.svg) no-repeat;
   }
@@ -32,4 +37,38 @@
   &--6 {
     background: url(../img/icon-feature-6.svg) no-repeat;
   }
+}
+
+/* Планшетная версия */
+
+@media @tablet-widths {
+  .content__wrapper {
+  .container-fluid();
+  }
+
+.advantages__title {
+  display: block;
+  font-size: 43px;
+  line-height: 50px;
+  padding-top: 54px;
+}
+
+.advantages__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.advantages__item {
+  min-width: 334px;
+  font-size: 20px;
+  font-weight: bold;
+  height: 110px;
+}
+
+.advantages__column--right{
+  margin-right: 100px;
+  min-width: 200p;
+}
+
 }

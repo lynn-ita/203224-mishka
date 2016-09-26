@@ -1,0 +1,50 @@
+/*Файл ../less/catalog-blocks/item-blocks__wrapper.less*/
+.item-block {
+ margin: 30px;
+ border: 1px solid #f9f9f9;
+}
+.item-block__photo{
+  background-image: url(..img/photo-1-mobile@1x.jpg);
+  min-width: 258px;
+  minheight: 95px;
+}
+
+.item-block__info {
+  margin-left:29px;
+  margin-top: 30px;
+
+
+  &--title {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #333333;
+  }
+  &--description {
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: 400;
+    color: @color-darkgrey;
+  }
+}
+
+.item-price {
+  posotiomn: relative;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 30px 30px 0 30px;
+  border-top: 1px solid #f9f9f9;
+  padding-bottom: 20px;
+}
+
+.price{
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 21px;
+}
+   .price::after {
+    display:block;
+    content: "";
+    background: #f1f1f1 url(..img/icon-cart.svg) no-repeat;
+}
