@@ -33,8 +33,6 @@
   font-size: 19px;
   line-height:18px;
   font-weight: 700;
-  background: url(../img/logo-htmlacademy.svg) no-repeat;
-  border-top: 1px solid #ededed;
 }
 
 
@@ -42,13 +40,19 @@
 @media @tablet-widths {
 
   .page-footer__wrapper {
+    .container-fluid();
     min-height: 143px;
-    margin-top: 0;
-    padding-top: 57px;
-    padding-bottom: 59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-in-footer{
+    display: flex;
+
   }
   .page-footer__copyright {
-      padding: 0;
+    padding: 0;
   }
 
   .page-footer__social {
@@ -56,15 +60,15 @@
   }
 }
 
-@media @desktop-widths {
+// @media @desktop-widths {
 
-  .page-footer__wrapper {
-    min-height: 143px; /* Временно для сетки */
-  }
-  .page-footer__social {
-    width: 145px;
-  }
-  .page-footer__copyright {
-    width: 185px;
-  }
-}
+//   .page-footer__wrapper {
+//     min-height: 143px; /* Временно для сетки */
+//   }
+//   .page-footer__social {
+//     width: 145px;
+//   }
+//   .page-footer__copyright {
+//     width: 185px;
+//   }
+// }

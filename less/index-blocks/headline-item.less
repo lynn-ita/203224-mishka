@@ -3,7 +3,6 @@
   margin: 0 30px;
 }
 
-
 .headline-item__title {
   font-size: 25px;
   line-height: 30px;
@@ -55,9 +54,9 @@
 }
 .headline-item__photo {
   background: @color-lightgrey url(../img/triple-set-mobile@1x.jpg) no-repeat 50% 0;
-  width: 260px;
-  height: 315px;
-  background-size: contain;
+  min-width: 260px;
+  min-height: 315px;
+  background-size: cover;
 }
 
 .headline-item__price {
@@ -85,7 +84,7 @@
 @media @tablet-widths {
 
   .headline-item__wrapper{
-    margin: 0 50px;
+    margin: 0 ;
   }
   .headline-item__header {
     display: flex;
@@ -98,7 +97,7 @@
    font-size: 43px;
    line-height:50px;
    flex-grow:1;
-   margin-bottoom: 50px;
+   margin-bottom: 50px;
  }
  .headline-item__label{
   display: flex;
@@ -125,17 +124,15 @@
   margin: 0;
 }
 .headline-item__foto {
-  display:flex;
-  background: #f1f1f1 url(../img/triple-set-mobile@1x.jpg) no-repeat 50% 50%;
-
-  width: 334px;
-  height: 405px;
-  background-size: contain;
+  background-size: 100%;
+  min-width: 334px;
+  min-height: 405px;
+  background-size: cover;
 }
 .headline-item__footer{
  display: flex;
  flex-direction: column;
- margin-top: -40px;
+ margin-top: -119px;
  width: 290px;
 }
 

@@ -1,29 +1,8 @@
 /* Файл index-blocks/features.less */
- .content__wrapper{
+.content__wrapper{
   .container();
 }
 
-
-.features__header {
-  background: @bg-image url(../img/hero-mobile@1x.jpg) no-repeat 50% 0;
-  min-width: 100%;
-  height: 358px;
-  background-size: cover;
-}
-
-.features-title {
-  padding-top: 87px;
-  text-align: center;
-  margin:0 66px;
-}
-
-.advantages__title,
-.reviews__title {
- font-size: 25px;
- line-height: 30px;
- font-weight: bold;
- font-style: normal;
-}
 
 .feature-items {
   list-style: none;
@@ -45,7 +24,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: 105px;
+  min-height: 105px;
 
   &::after {
     position: absolute;
@@ -64,7 +43,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: 105px;
+  min-height: 105px;
 
   &::after {
     position: absolute;
@@ -82,39 +61,26 @@
 /* Планшетная версия */
 @media @tablet-widths {
   .content__wrapper {
-  .container-fluid();
+    .container-fluid();
   }
 
-.features__header {
-  .container-fluid();
-  height: 732px;
-  background-size: cover;
-}
 
-.features-title {
-  display: block;
-  font-size: 43px;
-  line-height: 50px;
-  padding-top: 157px;
-}
+  .feature-items {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin-top: -120px;
+  }
 
-.feature-items {
-  display: flex;
-  flex-direction:row;
-  justify-content: space-around;
-  margin:0 50px;
-  margin-top: -120px;
-}
+  .feature-item--top {
+    flex-grow: 1;
+    min-height: 120px;
+  }
 
-.feature-item--top {
-  flex-grow: 1;
-  height: 120px;
-}
-
-.feature-item--bottom {
+  .feature-item--bottom {
    flex-grow: 2;
-   height: 120px;
-}
+   min-height: 120px;
+ }
 }
 
 

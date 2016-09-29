@@ -1,8 +1,14 @@
 /* Файл index-blocks/advantages.less */
 .advantages{
-   margin: 0 30px;
+ margin: 0 30px;
 }
-
+.advantages__title,
+.reviews__title {
+ font-size: 25px;
+ line-height: 30px;
+ font-weight: bold;
+ font-style: normal;
+}
 .advantages__column {
   margin: 0;
   padding: 0;
@@ -42,11 +48,10 @@
 /* Планшетная версия */
 
 @media @tablet-widths {
-  .content__wrapper {
-  .container-fluid();
-  }
-
-.advantages__title {
+  .advantages{
+   margin: 0;
+ }
+ .advantages__title {
   display: block;
   font-size: 43px;
   line-height: 50px;
@@ -54,9 +59,8 @@
 }
 
 .advantages__wrapper {
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
+  display: flex;
+  align-content: center;
 }
 
 .advantages__item {
@@ -65,10 +69,12 @@
   font-weight: bold;
   height: 110px;
 }
+.advantages__column{
 
+}
 .advantages__column--right{
-  margin-right: 100px;
-  min-width: 200p;
+  margin-right: 50px;
+
 }
 
 }

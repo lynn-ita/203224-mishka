@@ -1,4 +1,13 @@
 /* Файл ../less/catalog-blocks/catalog-page-header.less*/
+
+.catalog-page {
+  .container();
+}
+
+.catalog-page__wrapper {
+  margin:0 30px;
+}
+
 .catalog-title {
   min-width: 100%;
   min-height: 177px;
@@ -10,8 +19,21 @@
   font-weight: 700;
 }
 
-.catalog-page__wrapper {
-  .container();
-  margin:0;
-  padding:0;
+
+
+@media @tablet-widths {
+  .catalog-page {
+   .container-fluid();
+ }
+
+ .catalog-page__wrapper {
+  margin: 0 50px
+}
+
+.catalog-title {
+  min-height: 227px;
+  font-size: 43px;
+  line-height: 50px;
+}
+
 }

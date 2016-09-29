@@ -10,115 +10,117 @@
   <link rel="stylesheet" href="less/style.less">
 </head>
 <body class="catalog-page">
- <header class="page-header">
-  <h1 class="visually-hidden">Мишка</h1>
-  <div class="page-header__logo">
-    <a>
-     <img src="img/logo-mobile.svg" width="92" height="40" alt="Mishka">
-   </a>
- </div>
- <div class="main-nav__wrapper">
-  <nav class="main-nav  main-nav--closed  main-nav--nojs">
-    <a href="" class="main-nav__toggle"></a>
-    <ul class="main-nav__items">
-      <li class="main-nav__item">
-        <a href="catalog.html">Каталог товаров</a>
+  <header class="page-header">
+    <h1 class="visually-hidden">Мишка</h1>
+    <nav class="main-nav  main-nav--opend  main-nav--nojs">
+      <a href="" class="main-nav__toggle"></a>
+      <ul class="main-nav__items">
+        <li class="main-nav__item  main-nav__item--catalog">
+          <a>Каталог товаров</a>
+        </li>
+        <li class="main-nav__item  main-nav__item--order">
+          <a href="form.html">Вязание на заказ</a>
+        </li>
+      </ul>
+      <div class="man-nav__logo">
+        <a href="index.page" >
+         <img src="img/logo-mobile.svg" width="92" height="40" alt="Mishka">
+       </a>
+     </div>
+     <ul class="main-nav__service">
+      <li class="main-nav__item  main-nav__item--search">
+        <a href="#" >Поиск по сайту</a>
       </li>
-      <li class="main-nav__item">
-        <a href="form.html">Вязание на заказ</a>
+      <li class="main-nav__item  main-nav__item--cart">
+        <a href="#">Корзина: пока пуста</a>
       </li>
     </ul>
+    <ul class="main-nav__sell-out">
+      <li class="main-nav__item">
+        <a href="#">Новые поступления</a>
+      </li>
+      <li class="main-nav__item">
+        <a href="#">Распродажа</a>
+      </li>
+    </ul>
+    <ul class="main-nav__delivery">
+      <li class="main-nav__item   main-nav__item--delivery">Бесплатная доставка по миру</li>
+    </ul>
   </nav>
-  <ul class="main-nav__service">
-    <li class="main-nav__item ">
-      <a href="" class="search">Поиск по сайту</a>
-    </li>
-    <li class="main-nav__item">
-      <a href=""  class="cart">Корзина: пока пуста</a>
-    </li>
-  </ul>
-  <ul class="main-nav__sell-out">
-    <li class="main-nav__item">
-      <a href="#">Новые поступления</a>
-    </li>
-    <li class="main-nav__item">
-      <a href="#">Распродажа</a>
-    </li>
-  </ul>
-  <ul class="main-nav__free-delivery">
-    <li class="main-nav__item--grey">Бесплатная доставка по миру</li>
-  </ul>
-</div>
 </header>
 <main class="catalog-page">
   <div class="catalog-page__header">
-   <h2 class="catalog-title">Каталог товаров</h2>
- </div>
- <div class="catalog-page__wrapper">
-  <section class="item-blocks__wrapper">
-    <article class="item-block">
-      <div class="item-block__photo">
-        <img src="img/photo-1-mobile@1x.jpg" width="258" height="195" alt="Зайчик-попрыгайчик">
-      </div>
-      <div class="item-block__info">
-        <h3 class="item-block__info--title">Зайчик-попрыгайчик</h3>
-        <p class="item-block__info--description">Рост 30см, вес 200г </p>
-      </div>
-      <div class="item-price">
-        <span class="price" >1200 руб.</span>
-        <a href=""></a>
-      </div>
-    </article>
-    <article class="item-block">
-      <div class="item-block__photo">
-        <img src="img/photo-2-mobile@1x.jpg" width="258" height="195" alt="Корзинка для белья">
-      </div>
-      <div class="item-block__info">
-        <h3 class="item-block__info--title">Корзинка для белья</h3>
-        <p class="item-block__info--description">Диаметр 15см, высота 10см</p>
-      </div>
-      <div class="item-price">
-        <span class="price">690 руб.</span>
-        <a href=""></a>
-      </div>
-    </article>
-    <article class="item-block">
-      <div class="item-block__photo">
-        <img src="img/photo-3-mobile@1x.jpg" width="258" height="195" alt="Большая корзинка для игрушек">
-      </div>
-      <div class="item-block__info">
-        <h3 class="item__title">Большая корзинка <br> для игрушек</h3>
-        <p class="item__description">Диаметр 30см, высота 30см</p>
-      </div>
-      <div class="item-price">
-        <span class="price">1500 руб.</span>
-        <a href=""></a>
-      </div>
-    </article>
-  </section>
-  <section class="videocontent">
-    <h3 class="videocontent__title">Процесс производства</h3>
-    <article class="videocontent__wrapper">
-     <div class="videocontent__player">
-      <img src="img/video-mobile@1x.jpg" width="258" height="150" alt="Процесс производства">
-    </div>
-    <p class="videocontent__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как пояляются наши товары.</p>
-    <a href="" class="videocontent__order btn">Сделать заказ</a>
-  </article>
-</section>
-<section class="modal-block modal-block--opened  modal-block--nojs">
-  <div class="modal-block__wrapper">
-    <h1 class="modal-block__title"></h1>
-    <p>Выберите размер</p>
-    <div class="modal-block__buttons">
-      <button class="modal-block__button" type="button">S</button>
-      <button class="modal-block__button" type="button">M</button>
-      <button class="modal-block__button" type="button">L</button>
-    </div>
-    <a class="modal-block__basket btn" href="">Добавить</a>
+    <h2 class="catalog-title">Каталог товаров</h2>
   </div>
-</section>
-</div>
+  <div class="catalog-page__wrapper">
+    <section class="item-blocks__wrapper">
+      <article class="item-block">
+        <div class="item-block__photo">
+          <img src="img/photo-1-mobile@1x.jpg" width="258" height="195" alt="Зайчик-попрыгайчик">
+        </div>
+        <div class="item-block__body">
+          <div class="item-block__info">
+            <h3 class="item-block__info--title">Зайчик-попрыгайчик</h3>
+            <p class="item-block__info--description">Рост 30см, вес 200г </p>
+          </div>
+          <div class="item-price">
+            <span class="price" >1200 руб.</span>
+            <a href=""></a>
+          </div>
+        </div>
+      </article>
+      <article class="item-block">
+        <div class="item-block__photo">
+          <img src="img/photo-2-mobile@1x.jpg" width="258" height="195" alt="Корзинка для белья">
+        </div>
+        <div class="item-block__body">
+          <div class="item-block__info">
+            <h3 class="item-block__info--title">Корзинка для белья</h3>
+            <p class="item-block__info--description">Диаметр 15см, высота 10см</p>
+          </div>
+          <div class="item-price">
+            <span class="price">690 руб.</span>
+            <a href=""></a>
+          </div>
+        </div>
+      </article>
+      <article class="item-block">
+        <div class="item-block__photo">
+          <img src="img/photo-3-mobile@1x.jpg" width="258" height="195" alt="Большая корзинка для игрушек">
+        </div>
+        <div class="item-block__body">
+          <div class="item-block__info">
+            <h3 class="item__title">Большая корзинка <br> для игрушек</h3>
+            <p class="item__description">Диаметр 30см, высота 30см</p>
+          </div>
+          <div class="item-price">
+            <span class="price">1500 руб.</span>
+            <a href=""></a>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="videocontent">
+      <h3 class="videocontent__title">Процесс производства</h3>
+      <div class="videocontent__player">
+        <img src="img/video-mobile@1x.jpg" width="258" height="150" alt="Процесс производства">
+      </div>
+      <p class="videocontent__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как пояляются наши товары.</p>
+      <a href="" class="videocontent__order btn">Сделать заказ</a>
+    </section>
+    <section class="modal-block modal-block--opened  modal-block--nojs">
+      <div class="modal-block__wrapper">
+        <h1 class="modal-block__title"></h1>
+        <p>Выберите размер</p>
+        <div class="modal-block__buttons">
+          <button class="modal-block__button" type="button">S</button>
+          <button class="modal-block__button" type="button">M</button>
+          <button class="modal-block__button" type="button">L</button>
+        </div>
+        <a class="modal-block__basket btn" href="">Добавить</a>
+      </div>
+    </section>
+  </div>
 </main>
 <footer class="page-footer">
   <div class="page-footer__wrapper">

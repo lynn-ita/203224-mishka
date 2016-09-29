@@ -1,11 +1,10 @@
 /* Файл catalog-blocks/videocontent.less*/
 .videocontent {
-  margin: 30px;
+  margin-top: 30px;
   border: 1px solid #f9f9f9;
 }
 
 .videocontent__title{
-  display: block;
   padding: 27px 0 25px 90px;
   margin:0;
 }
@@ -23,7 +22,6 @@
 }
 
 .videocontent__text {
-  display:block;
   font-size: 13px;
   line-height: 30px;
   font-weight: 400;
@@ -44,7 +42,7 @@
   text-decoration: none;
 
   color: @color-darkgrey;
-  border: 2px solid @color-darkgrey;
+  border: 1px solid @color-darkgrey;
 
   width: 190px;
 
@@ -52,4 +50,33 @@
   padding-bottom: 16px;
 
   margin:0 34px 30px;
+}
+
+@media @tablet-widths {
+
+  .videocontent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .videocontent__title{
+    padding: 27px 0 24px 0;
+    margin:0;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .videocontent__player {
+    order: -1;
+    width: 100%;
+    min-height: 457px;
+
+  }
+  .videocontent__text {
+    font-size: 15px;
+    line-height: 30px;
+    color: @color-darkgrey;
+  }
 }
