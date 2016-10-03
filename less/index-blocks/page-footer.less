@@ -1,0 +1,74 @@
+/* Файл index-blocks/page-footer.less */
+.page-footer__wrapper {
+  min-height: 160px;
+  background-color: #f1f1f1;
+}
+
+.social-links,
+.page-footer__copyright{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  margin:0 58px;
+}
+
+.logo-in-footer{
+  display: none;
+}
+
+.social-link {
+  &--in {
+    background:  url(../img/icon-insta.svg) no-repeat;
+  }
+  &--fb {
+    background:  url(../img/icon-fb.svg) no-repeat;
+  }
+  &--tw {
+    background: url(../img/icon-twitter.svg) no-repeat;
+  }
+}
+
+.page-footer__copyright {
+  font-size: 19px;
+  line-height:18px;
+  font-weight: 700;
+}
+
+
+
+@media @tablet-widths {
+
+  .page-footer__wrapper {
+
+    min-height: 143px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-in-footer{
+    display: flex;
+
+  }
+  .page-footer__copyright {
+    padding: 0;
+  }
+
+  .page-footer__social {
+    margin-bottom: 0;
+  }
+}
+
+// @media @desktop-widths {
+
+//   .page-footer__wrapper {
+//     min-height: 143px; /* Временно для сетки */
+//   }
+//   .page-footer__social {
+//     width: 145px;
+//   }
+//   .page-footer__copyright {
+//     width: 185px;
+//   }
+// }

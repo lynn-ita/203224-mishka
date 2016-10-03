@@ -1,0 +1,127 @@
+/*Файл ../less/catalog-blocks/item-blocks__wrapper.less*/
+.item-blocks__wrapper{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item-block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 34px;
+  border: 1px solid @bg-image;
+}
+.item-block__photo-item{
+  background-image: url(..img/photo-1-mobile@1x.jpg);
+  width: 260px;
+  height: 195px;
+}
+
+.item-block__info  {
+    margin-top: 30px;
+    margin: 30px 30px -25px 30px;
+    border-bottom: 1px solid @bg-image;
+
+ .item-block__info-description  {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #333333;
+  }
+  .item-block__info-description {
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    color: @color-darkgrey;
+  }
+}
+
+.item-price {
+  position: relative;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 15px 30px 0 30px;
+  }
+
+.price{
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 21px;
+}
+.price::after {
+  display: block;
+  content: "";
+  background: @color-lightgrey url(..img/icon-cart.svg) no-repeat;
+}
+
+
+
+@media @tablet-widths {
+  .item-block {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
+
+  .item-block__photo-item{
+    min-width: 334px;
+    height: 320px;
+    background: @color-lightgrey url(..img/photo-1-mobile@1x.jpg) no-repeat;
+    }
+
+  .item-block__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 29px;
+  }
+.item-block__info {
+  margin: 30px 30px -113px 30px;
+    border-bottom: 1px solid #ececec;
+}
+  .item-price {
+    display: flex;
+    align-self: flex-end;
+  }
+}
+
+
+
+@media @desktop-widths {
+
+.item-blocks__wrapper {
+      display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+  .item-block {
+    width: 316px;
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item-block__photo-item{
+  background: @color-lightgrey url(..img/photo-1-mobile@1x.jpg) no-repeat;
+  min-width: 316px;
+  height: 465px;
+}
+
+.item-block__info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.item-block__info-title {
+  margin-bottom: 0;
+}
+.item-block__info-description {
+  margin: 0;
+}
+}

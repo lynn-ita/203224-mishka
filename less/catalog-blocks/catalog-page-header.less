@@ -1,0 +1,53 @@
+/* Файл ../less/catalog-blocks/catalog-page-header.less*/
+.page-header,
+.catalog-page {
+  .container();
+}
+
+.catalog-page__wrapper {
+  margin:0 30px;
+}
+
+.catalog-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  min-height: 177px;
+  background-color:@color-lightgrey;
+  margin:0;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+
+
+@media @tablet-widths {
+  .catalog-page {
+    .container();
+  }
+
+  .catalog-page__wrapper {
+    .wrapper();
+    margin: 0;
+  }
+
+  .catalog-title {
+    min-height: 227px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .catalog-title {
+    min-height: 260px;
+    font-size: 53px;
+    line-height: 57px;
+
+    margin-bottom: 127px;
+  }
+}

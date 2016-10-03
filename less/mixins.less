@@ -1,0 +1,42 @@
+.clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+
+.font-bold(@font-size, @line-height) {
+  font-family: "Open Sans", "Arial", "sans-serif";
+  font-weight: bold;
+  font-style: normal;
+  font-size: @font-size;
+  line-height: @line-height;
+}
+
+.font-normal(@font-size, @line-height) {
+  font-family: "Open Sans", "Arial", "sans-serif";
+  font-weight: normal;
+  font-style: normal;
+  font-size: @font-size;
+  line-height: @line-height;
+}
+
+.container() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 768px;
+  }
+
+  @media @desktop-widths {
+    width: 1150px;
+  }
+}
+
+.wrapper() {
+    padding: 0 50px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,210 @@
+
+.extraform__title
+.orderform,
+.contactform {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.orderform__title,
+.contactform__title,
+.extraform__title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: @color-lightgreen;
+  text-transform: uppercase;
+  &--name {
+    padding: 20px 0;
+  }
+  &--tel {
+    display:block;
+    padding: 20px 0 15px 0;
+  }
+  &--email {
+    display:block;
+    padding-top: 28px;
+  }
+ }
+
+.input__field {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+
+padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.input__field label {
+padding: 10px 0;
+font-size: 17px;
+line-height: 18px;
+font-weight: 700;
+}
+
+input[type=text],
+input[type=tel],
+input[type=email]{
+  width: 258px;
+  padding: 10px 0;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid @color-darkgrey;
+  outline: none;
+}
+
+input[placeholder] {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+textarea {
+  width: 236px;
+  height: 115px;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 10px;
+  border: 2px solid @color-darkgrey;
+  outline: none;
+}
+
+.note {
+  font-size: 14px;
+  font-weight: 400;
+  color: @color-darkgrey;
+  }
+
+.tablet-note{
+  display: none;
+}
+
+input[type=submit] {
+  display: flex;
+  justify-content: center;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: @color-darkgrey;
+  border: 2px solid @color-darkgrey;
+  background-color: @bg-white;
+
+  width: 258px;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  margin-bottom: 50px;
+}
+
+
+/*Планшетная версия*/
+
+@media @tablet-widths {
+
+.filter__title,
+.contactform__title,
+.orderform__title,
+.extraform__title  {
+width: 167px;
+}
+
+
+.contactform {
+display: flex;
+flex-direction: row;
+align-items: baseline;
+background-color: @color-lightgrey;
+
+padding-bottom: 60px;
+padding-top: 60px;
+}
+
+
+.orderform {
+display: flex;
+flex-direction: row;
+align-items: baseline;
+}
+
+.orderform__wrapper{
+    margin-top: 65px;
+    margin-bottom: 25px;}
+
+
+.input__field{
+display: flex;
+flex-direction: row;
+align-items: baseline;
+
+padding-bottom: 38px;
+}
+
+
+.input__field label {
+padding: 20px 0;font-size: 19px;
+line-height: 18px;
+font-weight: 700;
+}
+
+
+input[type=text] {
+  margin-left: 20px;
+  padding-left: 30px;
+  min-width: 100%;
+ }
+input[type=tel],
+input[type=email]{
+    min-width: 100%;
+    padding-right: 30px;
+    background-color: @color-lightgrey;
+ }
+
+textarea {
+width:500px;
+height: 140px;
+}
+
+
+.extraform {
+  margin-top: 65px;
+}
+.submit-button {
+  margin-top: 55px;
+}
+
+.mobile-note{
+  display: none;
+}
+
+.tablet-note{
+  display: block;
+}
+
+.note {
+font-size: 17px;
+line-height: 24px;
+color: @color-darkgrey;
+}
+
+.extraform__button {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: baseline;
+  justify-content: space-between;
+}
+textarea {
+  width: 700px;
+  height: 145px;
+  font-size: 17px;
+  }
+}
+

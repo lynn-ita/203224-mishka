@@ -1,0 +1,94 @@
+/* Файл index-blocks/advantages.less */
+.advantages__wrapper{
+ margin: 0 30px;
+}
+
+.advantages__title,
+.reviews__title {
+ font-size: 25px;
+ line-height: 30px;
+ font-weight: bold;
+ font-style: normal;
+}
+
+.advantages__column {
+  margin: 0;
+  padding: 0;
+
+  font-size: 17px;
+  font-style: normal;
+  list-style-type: none;
+}
+
+.advantages__item {
+  padding: 50px 0 20px 0;
+
+  &--1 {
+    background: url(../img/icon-feature-1.svg) no-repeat;
+  }
+  &--2 {
+    background: url(../img/icon-feature-2.svg) no-repeat;
+  }
+
+  &--3 {
+    background: url(../img/icon-feature-3.svg) no-repeat;
+  }
+
+  &--4 {
+    background: url(../img/icon-feature-4.svg) no-repeat;
+  }
+
+  &--5 {
+    background: url(../img/icon-feature-5.svg) no-repeat;
+  }
+
+  &--6 {
+    background: url(../img/icon-feature-6.svg) no-repeat;
+  }
+}
+
+/* Планшетная версия */
+
+@media @tablet-widths {
+  .advantages__wrapper{
+     .wrapper ();
+  margin: 0;
+ }
+
+ .advantages__list{
+  display: flex;
+  align-content: center;
+ }
+
+ .advantages__title {
+  font-size: 43px;
+  line-height: 50px;
+  padding-top: 54px;
+}
+
+.advantages__item {
+  min-width: 334px;
+  font-size: 20px;
+  font-weight: bold;
+  height: 110px;
+}
+
+.advantages__column--right{
+  margin-right: 50px;
+
+}
+
+}
+
+@media @desktop-widths {
+  .advantages__wrapper {
+margin: 0 175px;
+}
+
+
+
+ .advantages__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
