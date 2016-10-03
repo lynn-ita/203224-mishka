@@ -1,9 +1,4 @@
 /* Файл index-blocks/features.less */
-.content__wrapper{
-  .container();
-}
-
-
 .feature-items {
   list-style: none;
   font-size: 19px;
@@ -60,10 +55,9 @@
 
 /* Планшетная версия */
 @media @tablet-widths {
-  .content__wrapper {
-    .container-fluid();
+  .features {
+    .wrapper ();
   }
-
 
   .feature-items {
     display: flex;

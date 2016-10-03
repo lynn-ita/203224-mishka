@@ -1,12 +1,12 @@
 
 /*Файл blocks/main-page__header.less*/
-
+.main-page__wrapper {border: 1px dashed red;}
 
 .main-page__header {
   background: @bg-image url(../img/hero-mobile@1x.jpg) no-repeat 50% 0;
   min-width: 100%;
   min-height: 358px;
-  .container();
+
 }
 
 .main-page__title {
@@ -18,16 +18,32 @@
 
 @media @tablet-widths {
 
+
   .main-page__header {
     background: @bg-image url(../img/hero-mobile@1x.jpg) no-repeat 50% 0;
-    min-width: 100%;
-    min-height: 732px;
+    width: 100%;
+    height: 732px;
     background-size: cover;
-    .container-fluid();
   }
 
   .main-page__title {
     font-size: 43px;
     line-height: 50px;
     padding-top: 157px;
-    }}
+    }
+  }
+
+
+
+@media @desktop-widths {
+
+  .main-page__header {
+    background: @bg-image url(../img/hero-mobile@1x.jpg) no-repeat 50% 0;
+    width: 100%;
+    height: 742px;
+    background-size: cover;
+  }
+
+  }
+
+

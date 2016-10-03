@@ -1,21 +1,82 @@
 /*Файл form-bloсks/form-page__header.less*/
+.form-page__header,
+.form-page__wrapper,
+.page-footer {
+  .container();
+}
+
+.filter__wrapper,
+.orderform,
+.contactform,
+.extraform {
+  padding: 0 30px;
+}
 
 .form-page__title {
   min-width: 100%;
   min-height: 177px;
-  background-color: #f1f1f1;
-  text-align: center;
-  margin: 0;
+
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
+
+  background-color: @color-lightgrey;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-page__header p {
   padding: 30px 29px 26px;
-  margin:0;
+  margin: 0;
   color: @color-darkgrey;
   font-size: 13px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 400;
 }
+
+
+@media @tablet-widths {
+.filter__wrapper,
+.orderform,
+.contactform,
+.extraform {
+  .wrapper();
+  margin: 0;
+}
+
+
+  .form-page__title {
+    min-height: 238px;
+
+    font-size: 43px;
+    line-height: 50px;
+
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .form-page__header p {
+    font-size: 17px;
+    line-height: 30px;
+    padding: 70px 50px 40px 50px;
+  }
+
+}
+
+
+@media @desktop-widths {
+
+  .form-page__title {
+    min-height: 260px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+.form-page__header p {
+    font-size: 17px;
+    line-height: 30px;
+    padding: 127px 225px 40px 225px;
+  }
+  }
