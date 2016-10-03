@@ -45,30 +45,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .wrapper();
   }
 
   .logo-in-footer{
     display: flex;
 
   }
-  .page-footer__copyright {
-    padding: 0;
-  }
 
-  .page-footer__social {
-    margin-bottom: 0;
-  }
+.social-links,
+.page-footer__copyright{
+
+  margin:0;
+}
 }
 
-// @media @desktop-widths {
+@media @desktop-widths {
 
-//   .page-footer__wrapper {
-//     min-height: 143px; /* Временно для сетки */
-//   }
-//   .page-footer__social {
-//     width: 145px;
-//   }
-//   .page-footer__copyright {
-//     width: 185px;
-//   }
-// }
+  .page-footer__wrapper {
+    min-height: 143px;
+    .wrapper();
+  }
+
+}
