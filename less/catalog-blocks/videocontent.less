@@ -21,47 +21,26 @@
   font-weight: 700;
   color: #333333;
 
-  background: @color-lightgrey url(../img/video-mobile@1x.jpg) no-repeat;
+  background: @lightgrey url(../img/video-mobile@1x.jpg) no-repeat;
 }
 
 .videocontent__text {
   font-size: 13px;
   line-height: 30px;
   font-weight: 400;
-  color: @color-darkgrey;
+  color: @darkgrey;
   padding: 28px 34px;
   margin: 0;
 }
 
-.videocontent__order {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: 700;
-
-  text-transform: uppercase;
-  text-decoration: none;
-
-  color: @color-darkgrey;
-  border: 2px solid @color-darkgrey;
-
+.videocontent__button {
+  color: @darkgrey;
   width: 190px;
   height: 52px;
-
-
-
-  margin:0 34px 30px;
+    margin:0 34px 30px;
 }
 
 @media @tablet-widths {
-
-  .videocontent {
-
-  }
-
   .videocontent__title{
     padding: 27px 0 24px 110px;
     margin:0;
@@ -80,11 +59,12 @@
   .videocontent__text {
     font-size: 15px;
     line-height: 30px;
-    color: @color-darkgrey;
+    color: @darkgrey;
   }
 
-  .videocontent__order {
+  .videocontent__button {
     width: 584px;
+    height: 52px;
   }
 }
 
@@ -111,8 +91,9 @@
     padding-top: 20px;
 
   }
-  .videocontent__order {
+  .videocontent__button {
    width: 235px;
+   height: 52px;
    margin: 0;
  }
 

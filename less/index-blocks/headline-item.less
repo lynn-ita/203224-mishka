@@ -3,6 +3,25 @@
   margin: 0 30px;
 }
 
+.headline-item{
+  position: relative;
+  padding-top: 30px;
+
+  &::after {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+
+    width: 100%;
+    height: 7px;
+
+    background: url("../img/bg-zigzag-line.svg") repeat;
+    background-size: cover;
+
+    content: "";
+  }
+}
+
 .headline-item__title {
   font-size: 25px;
   line-height: 30px;
@@ -11,7 +30,7 @@
 }
 
 .headline-item__label {
-  color: @color-lightgreen;
+  color: @lightgreen;
 
   font-size: 17px;
   line-height: 16px;
@@ -35,7 +54,7 @@
 }
 
 .headline-item__column  {
-  border-bottom: 1px solid @color-lightgrey;
+  border-bottom: 1px solid @lightgrey;
   padding: 5px;
   padding-right: 15px;
 }
@@ -45,7 +64,7 @@
   justify-content: center;
   flex-wrap:wrap;
 
-  color: @color-darkgrey;
+  color: @darkgrey;
 
   font-size: 17px;
   line-height: 24px;
@@ -53,11 +72,12 @@
   font-style: normal;
 }
 .headline-item__photo {
-  background: @color-lightgrey url(../img/triple-set-mobile@1x.jpg) no-repeat 50% 0;
   min-width: 260px;
   min-height: 315px;
   background-size: cover;
+
 }
+
 
 .headline-item__price {
   display: flex;
@@ -67,41 +87,55 @@
 }
 
 .headline-item__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 258px;
   height: 52px;
   width: 258px;
 }
 
 
 
-/* Планшетная версия */
 @media @tablet-widths {
-.headline-item__wrapper {
+
+  .headline-item__wrapper {
    .wrapper ();
    margin: 0;
-  }
-
-  .headline-item__header {
-    display: flex;
-    justify-content: space-between;
-
-    margin-top: 25px;
-
-  }
-  .headline-item__title{
-   font-size: 43px;
-   line-height:50px;
-   flex-grow:1;
-   margin-bottom: 50px;
  }
- .headline-item__label{
+
+ .headline-item__header {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 25px;
+}
+
+.headline-item{
+  position: relative;
+  padding-top: 30px;
+
+  &::after {
+      bottom: -52px;
+
+      height: 15px;
+
+      background: url("../img/bg-zigzag-line.svg") repeat -6px;
+      background-size: 100%;
+    }
+}
+
+
+.headline-item__title{
+  font-size: 43px;
+  line-height:50px;
+  flex-grow:1;
+
+  margin-bottom: 50px;
+}
+
+.headline-item__label{
   display: flex;
   align-items: center;
   width: 100px;
 }
+
 .headline-item__block {
   display:flex;
   align-items: flex-start;
@@ -109,11 +143,11 @@
   flex-wrap: wrap;
 }
 
-
 .headline-options{
   width: 285px;
   padding-right: 45px;
 }
+
 .headline-item__info {
   padding-bottom: 40px;
 }
@@ -128,7 +162,8 @@
   min-width: 334px;
   min-height: 405px;
   background-size: cover;
-}
+
+  }
 
 .headline-item__footer{
  display: flex;
@@ -144,13 +179,14 @@
 
 }
 
-/*Десктопная версия*/
+
 @media @desktop-widths {
 
   .headline-item__label {
     order: -1;
   }
-  .headline-item__wrapper{
+
+  .headline-item__wrapper {
     display: flex;
     flex-direction: column;
   }
@@ -161,9 +197,17 @@
     z-index:1;
     margin-top: 67px;
   }
+.headline-item{
+  position: relative;
+  padding-bottom: 60px;
 
+  &::after {
+      bottom: -52px;
+
+      height: 24px;
+    }
+}
   .headline-item__title{
-
    font-size: 53px;
    line-height:57px;
    margin-left: 68px;
@@ -179,15 +223,16 @@
 
 
 .headline-item__photo{
+
   min-width: 525px;
   min-height: 640px;
+  background-size: cover;
 }
 
 
 .headline-item__footer {
-  margin-top: -125px
+  margin-top: -125px;
 }
-
 }
 
 

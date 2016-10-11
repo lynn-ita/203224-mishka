@@ -13,7 +13,7 @@
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  color: @color-lightgreen;
+  color: @lightgreen;
   text-transform: uppercase;
   &--name {
     padding: 20px 0;
@@ -53,8 +53,16 @@ input[type=email]{
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 2px solid @color-darkgrey;
+  border-bottom: 2px solid @darkgrey;
   outline: none;
+
+  &:active,
+  &:hover {
+    border-color:  #62d1ba;
+  }
+  &::invalid {
+    border-color:  #f0b1b1;
+  }
 }
 
 input[placeholder] {
@@ -69,14 +77,22 @@ textarea {
   font-size: 17px;
   line-height: 24px;
   padding: 10px;
-  border: 2px solid @color-darkgrey;
+  border: 2px solid @darkgrey;
   outline: none;
+
+  &:active,
+  &:hover {
+    border-color:  #62d1ba;
+  }
+  &::invalid {
+    border-color:  #f0b1b1;
+  }
 }
 
 .note {
   font-size: 14px;
   font-weight: 400;
-  color: @color-darkgrey;
+  color: @darkgrey;
   }
 
 .tablet-note{
@@ -93,9 +109,9 @@ input[type=submit] {
   text-transform: uppercase;
   text-decoration: none;
 
-  color: @color-darkgrey;
-  border: 2px solid @color-darkgrey;
-  background-color: @bg-white;
+  color: @darkgrey;
+  border: 2px solid @darkgrey;
+  background-color: @white;
 
   width: 258px;
 
@@ -122,7 +138,7 @@ width: 167px;
 display: flex;
 flex-direction: row;
 align-items: baseline;
-background-color: @color-lightgrey;
+background-color: @lightgrey;
 
 padding-bottom: 60px;
 padding-top: 60px;
@@ -165,7 +181,7 @@ input[type=tel],
 input[type=email]{
     min-width: 100%;
     padding-right: 30px;
-    background-color: @color-lightgrey;
+    background-color: @lightgrey;
  }
 
 textarea {
@@ -192,7 +208,7 @@ height: 140px;
 .note {
 font-size: 17px;
 line-height: 24px;
-color: @color-darkgrey;
+color: @darkgrey;
 }
 
 .extraform__button {

@@ -11,7 +11,14 @@
   flex-direction: column;
   margin-top: 34px;
   border: 1px solid @bg-image;
+  &:hover {
+    box-shadow: 0 6px 12px @lightgrey;
+  }
+  &:active {
+    box-shadow: 0 3px 5px @lightgrey;
+  }
 }
+
 .item-block__photo-item{
   background-image: url(..img/photo-1-mobile@1x.jpg);
   width: 260px;
@@ -34,7 +41,7 @@
     line-height: 30px;
     font-weight: 400;
     padding-bottom: 10px;
-    color: @color-darkgrey;
+    color: @darkgrey;
   }
 }
 
@@ -54,7 +61,7 @@
 .price::after {
   display: block;
   content: "";
-  background: @color-lightgrey url(..img/icon-cart.svg) no-repeat;
+  background: @lightgrey url(..img/icon-cart.svg) no-repeat;
 }
 
 
@@ -69,7 +76,7 @@
   .item-block__photo-item{
     min-width: 334px;
     height: 320px;
-    background: @color-lightgrey url(..img/photo-1-mobile@1x.jpg) no-repeat;
+    background: @lightgrey url(..img/photo-1-mobile@1x.jpg) no-repeat;
     }
 
   .item-block__body {
@@ -105,7 +112,7 @@
   }
 
   .item-block__photo-item{
-  background: @color-lightgrey url(..img/photo-1-mobile@1x.jpg) no-repeat;
+  background: @lightgrey url(..img/photo-1-mobile@1x.jpg) no-repeat;
   min-width: 316px;
   height: 465px;
 }

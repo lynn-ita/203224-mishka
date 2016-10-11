@@ -2,7 +2,7 @@
 
 
 body {
-  background-color: @bg-white;
+  background-color: @white;
   font-family: 'Open Sans', sans-serif;
   min-width: 320px;
   margin: 0 auto;
@@ -21,8 +21,17 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 
-  color: @color-darkgrey;
-  border: 2px solid @color-darkgrey;
+  color: @darkgrey;
+  border: 2px solid @darkgrey;
+
+  &:hover {
+    color: @white;
+    background-color: @darkgrey;
+  }
+
+  &:active  {
+    color: #626262;
+  }
 }
 
 
